@@ -238,5 +238,5 @@ div#body {
     margin: 0px;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    background-color: darkgrey;
+    background-image: url(../media/grill.jpg);
 }
