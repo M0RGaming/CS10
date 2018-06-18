@@ -3,14 +3,14 @@
 	<head>
 		
 		<meta charset="utf-8">
-		<title>CS10 Web1 : LOTech Main</title>
+		<title>CS10 Web1 : LOTech Sound</title>
 
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/indexani.css">
 
-		<script type="text/javascript" src="js/functions/toggleden.js"></script>
-		<script type="text/javascript" src="js/api/sleep.js"></script>
-		<script type="text/javascript" src="js/api/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/functions/toggleden.js"></script>
+		<script type="text/javascript" src="../js/api/sleep.js"></script>
+		<script type="text/javascript" src="../js/api/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" id="live"></script>
 
 		<script type="text/javascript">
@@ -20,10 +20,12 @@
 
 			};
 
-			function toSound() {
+			function toHome() {
 				$('html').fadeOut(250)
-				window.location = "sound"
+				sleep(250)
+				window.location = "../"
 			};
+
 
 			function toTheatre() {
 				$('html').fadeOut(250)
@@ -47,23 +49,23 @@
 							                                   
 			-->
 			<div class="parallax-group" style="height: 25%">
-				<div class="parallax-layer parallax-layer-base backgroundcolor" id="header">
+				<div class="parallax-layer parallax-layer-base backgroundcolor" id="header" style="background-image: url(../media/grill.jpg)">
 					<div id="logo">
-						<a href="#">
-							<img src="media/logo.png" id="logoimg">
+						<a onclick="toHome()">
+							<img src="../media/logo.png" id="logoimg">
 						</a>
 					</div>
 
 					<div id="navtitle">
-						<h1 class="title">Lillian Osborne Technical Theatre</h1>
+						<h1 class="title">LO Tech: Sound</h1>
 					</div>
 
 					<nav id="headernav">
-						<a href="#root">Home</a>
+						<a href="../indexnew.html" class="transition">Home</a>
 						||
 						<a href="#lighting">Lighting</a>
 						||
-						<a href="#sound">Sound</a>
+						<a href="#root"><b style="font-family: sans-serif;">Sound</b></a>
 						||
 						<a onclick="toTheatre()">Theatre</a>
 					</nav>
@@ -76,13 +78,13 @@
 			<div class="parallax-group" style="height: 100%">
 				<div class="parallax-layer parallax-layer-base" id="introtxt">
 					<article>
-						<h1 id="introtxttitle">Welcome to the Lillian Osborne Techincal Theatre Website</h1>
-						<h2 id="introtxtinfo">This Website is meant to be a tool that people from technical theatre can come to for either fun or to learn how to not blow up stuff. While entering this website, you may have noticed a sidebar slowly fading into the side of your screen, leaving behind an arrow. If you press that arrow, a sidebar that contains a chat room for tech students will be revealed.</h2>
+						<h1 id="introtxttitle">Welcome to the LOTech Sound Website</h1>
+						<h2 id="introtxtinfo">Within this website, you will be able to learn how to use a sound mixer, connect speakers to stuff, and most importantly, not blow up the thousands of dollars worth of speakers.</h2>
 					</article>
 				</div>
 
 				<div class="parallax-layer parallax-layer-back" id="introback">
-					<img src="media/lotech.jpg" class="backimg" style="position: absolute;">
+					<img src="../media/sq6.jpg" class="backimg" style="position: absolute;">
 				</div>
 				
 			</div>
@@ -93,15 +95,15 @@
 			<div class="parallax-group" id="lighting" style="height: 100%">
 				<div class="parallax-layer parallax-layer-fore" id='lightingtxt'>
 					<article class="lightsound">
-						<h1 id="lightingtxtinfo"> Click the Button below to be taken to the lighting site, where you can learn to hang lights, patch lights, operate lights, and not blow up lights.</h1>
-						<div id="lightingtxtbutton" onmouseover="darken('lightingtxtbutton')" onmouseout="lighten('lightingtxtbutton')">
-							<h2>To The Lighting Site</h2>
-						</div>
+						<h1 id="lightingtxtinfo">How to connect mics and speakers to the mixer</h1>
+						<h2>
+							[This is a stand in, the actual text will be written by the head of sound for next year. However, I am somewhat knoledgeable in the arts of sound design and operation, so I will include a basic instruction of how to do stuff.] When connecting a speaker to the sound board, you will need an xlr cable. Plug the xlr cable into an input for the mixer, and voila, you have a connection. As an output, you plug one end of the xlr cable into the mixer's output. Then take the other end and plug it into the speaker. There you go, now you know how to connect the speakers to the mixer.
+						</h2>
 					</article>
 					
 				</div>
 				<div class="parallax-layer parallax-layer-base" id="lightingback" style="z-index: -98">
-					<img src="media/peprally.jpg" class="backimg" style='position: absolute;'>
+					<img src="../media/peprally.jpg" class="backimg" style='position: absolute;'>
 				</div>
 			</div>
 
@@ -109,15 +111,13 @@
 				<div class="parallax-layer parallax-layer-base" id='soundtxt'>
 					<article class="lightsound">
 						<h1 id="soundtxtinfo"> Click the Button below to be taken to the sound site, where you can learn to make mikes work, properly plug in sound cables, operate the sound board, and not blow up speakers.</h1>
-						<a href="sound/index.html" class="transition">
-							<div id="soundtxtbutton" onmouseover="darken('soundtxtbutton')" onmouseout="lighten('soundtxtbutton')">
-								<h2>To The Sound Site</h2>
-							</div>
-						</a>
+						<div id="soundtxtbutton" onmouseover="darken('soundtxtbutton')" onmouseout="lighten('soundtxtbutton')">
+							<h2>To The Sound Site</h2>
+						</div>
 					</article>
 				</div>
 				<div class="parallax-layer parallax-layer-back" id="soundback" style="z-index: -99">
-					<img src="media/mcbeth.jpg" class="backimg" style="position: absolute;">
+					<img src="../media/mcbeth.jpg" class="backimg" style="position: absolute;">
 				</div>
 			</div>
 			
@@ -130,22 +130,6 @@
 
 
 
-		</div>
-
-
-		<div id="sidebar">
-			<div id="techden" style="animation-name: hide; animation-duration: 3s;">
-
-				<h1>The Tech Den</h1>
-				<h2>A Discord Chat Room</h2>
-
-				<iframe src="https://titanembeds.com/embed/453048311323164673" height="400" width="300" frameborder="0">
-					
-				</iframe>
-
-				<img src="media/arrow.png" id="imgden" onclick="showDen()"
-					style="animation-name: hideimg; animation-duration: 3s;">
-			</div>
 		</div>
 
 	</body>
@@ -162,7 +146,6 @@
 
 		if (htmledit === true) {
 			document.getElementById('live').setAttribute('src', 'js/api/live.js')
-			document.getElementById('sidebar').remove()
 		}
 
 		// if user is on a phone, tell them its not meant to be used on a phone (easier to do then media queries)
@@ -189,6 +172,7 @@
 		    $("body").css("display", "none");
 		 	$("body").css("background-color", "black")
 		    $("body").fadeIn(1000);
+		 
 		    $("a.transition").click(function(event){
 		        event.preventDefault();
 		        $("body").css("background-color", "black")
@@ -205,6 +189,5 @@
 			}, (1000));
 		});
 	</script>
-
 
 </html>
