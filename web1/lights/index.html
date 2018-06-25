@@ -34,7 +34,7 @@
 		</script>
 
 	</head>
-	<body id="root" style="background-image: url(../media/grill.jpg);">
+	<body id="root" style="background-color: darkslategray">
 		
 		<div id="parallax">
 
@@ -49,7 +49,7 @@
 							                                   
 			-->
 			<div class="parallax-group" style="height: 25%">
-				<div class="parallax-base backgroundcolor" id="header" style="background-image: url(../media/grill.jpg)">
+				<div class="parallax-base backgroundcolor" id="header" style="background-color: darkslategray">
 					<header>
 						<div id="logo">
 							<a href="../" class="transition">
@@ -64,9 +64,9 @@
 						<nav id="headernav">
 							<a href="../" class="transition">Home</a>
 							||
-							<a href="../lights" class="transition">Lighting</a>
+							<a href="#root"><b style="font-family: sans-serif;">Lighting</b></a>
 							||
-							<a href="#root"><b style="font-family: sans-serif;">Sound</b></a>
+							<a href="../sound" class="transition">Sound</a>
 							||
 							<a onclick="toTheatre()">Theatre</a>
 						</nav>
@@ -80,38 +80,41 @@
 				<!-- Introduction to the website -->
 				<div class="parallax-group" id="part1" style="height: 75%;">
 					<div class="parallax-back" style="z-index: -90;">
-						<img src="../media/sq6.jpg" class="backimg">
+						<img src="../media/element.jpg" class="backimg">
 					</div>
 
 					<div class="parallax-base" id="introtxt">
 						<article>
-							<h1 id="introtxttitle">Welcome to the LO:TECH Sound Website</h1>
+							<h1 id="introtxttitle">Welcome to the LO:TECH Lighting Website</h1>
 							<h1 id="introtxtinfo">
-								Within this website, you will be able to learn how to use a sound mixer, connect speakers to stuff, and most importantly, not blow up the thousands of dollars worth of speakers.
+								Within this website, you will be able to learn how to use the lighting board, and most importantly, not blow up the thousands of dollars worth of lights.
 							</h1>
 						</article>
 					</div>
 				</div>
 
-				<!-- Basic Instructions for how to plug in speakers -->
+				<!-- Basic Instructions for how to turn on board-->
 				<div class="parallax-group" id="part2" style="height: 100%;">
 					<div class="parallax-base" style="z-index: -50">
-						<img src="../media/backspeakers.jpg" class="backimg">
+						<img src="../media/power.jpg" class="backimg">
 					</div>
 
 					<div class="parallax-fore">
 						<article>
 							<h1 class="txtinfo">
-								<u>How to connect speakers to the board<br></u>
+								<u>How to Turn on the Board<br></u>
 								<ol>
-									<li>Find a XLR Cable or a 1/4" cable</li>
-									<li>Make sure the channel you want to plug into is turned down on the board</li>
-									<li>Plug the XLR or 1/4" cable into the board</li>
-									<li>Plug the other end into the speakers input</li>
-									<li>To daisy chain speakers, connect the output of the master to the input of the slave</li>
-									<li>Turn on the speaker before you raise the volume on the board<br></li>
+									<li>Press the button</li>
+									<li>Don't touch anything</li>
+									<li>Initilise the board (Refer to the next set of instructions)</li>
 								</ol>
-								The tutorial specified above also applies to connecting mics and other inputs to the board
+								<u>How to Turn off the board<br></u>
+								<ol>
+									<li>Turn off all lights ( [1][Thru][2][1][1][Out][Enter] )</li>
+									<li>Save show</li>
+									<li>In the menu, select "Power off system"</li>
+									<li>Make sure all lights are off, if they are press ok.</li>
+								</ol>
 							</h1>
 						</article>
 					</div>
@@ -119,31 +122,75 @@
 
 				<div class="parallax-group" id="part3" style="height: 100%">
 					<div class="parallax-back" style="z-index: -89">
-						<img src="../media/mcbeth.jpg" class="backimg">
+						<img src="../media/warmup.jpg" class="backimg">
 					</div>
 
 					<div class="parallax-fore">
 						<article>
 							<h1 class="txtinfo">
-								<u>How to connect Mics to the soundboard in the theatre</u>
-
-								In the theatre, we cant just run a cable up so we have to use something known as a Digital Snake.
-
+								<u>Initilizing: <b>DO NOT SKIP</b><br></u>
+								If you skip this, there is a high chance you blow stuff up.
+								<br>
 								<ol>
-									<li>Connect the xlr to the mic</li>
-									<li>Connect the other end to the D-Snake</li>
-									<li>Bind the D-Snake input to a channel on the sound board.</li>
+									<li>Set all lights to warmup at 25%</li>
+									<ul>
+										<li>[1][Thru][2][1][1][At][2][5][Enter]</li>
+									</ul>
+									<br>
+									<li>Open the house hang</li>
+									<ol>
+										<li>Select Everything</li>
+										<li>Press Ok</li>
+									</ol>
+									<br>
+									<li>Save a new show file inside a new folder <b><u>IMMEDIATELY</u></b></li>
 								</ol>
 							</h1>
 						</article>
 					</div>
 				</div>
 
+				<div class="parallax-group" id="part4" style="height: 100%">
+					<div class="parallax-base">
+						<img src="../media/lights.jpeg" class="backimg">
+					</div>
+
+					<div class="parallax-fore">
+						<article>
+							<h1 class="txtinfo" style="margin-top: 7.5%">
+								<u>Lighting The Stage<br></u>
+								The stage is devided into 10 zones, 5 front, 5 back, going from left to right.
+								The lighting board has visual representations of channels, called tombstones.
+								Tombstones are grouped together to represent one type of lighting.
+								<ul>
+									<li>The first group of 5 are LEDs, focused stage down, and originating from the left</li>
+									<li>The second group of 5 are the same as above, but rather focused stage up.</li>
+									<li>The third and fourth groups are the same as the above, but focused from the right.</li>
+								</ul>
+								To set levels on the channels, type the channel number, or click the tombstone, then press at, then type your target intensity.
+								Some other parameters you can use are as follow.
+								<ul>
+									<li>[Thru] - Selects a range of channels (EX: [1][Thru][5][At][5][0][Enter])</li>
+									<li>[+] - Adds a channel to the selected channels (EX: [1][+][5][At][5][0][Enter])</li>
+									<li>[Out] - Sets the intensity to zero (EX: [1][Thru][2][1][1][Out][Enter])</li>
+									<li>[Full] - Oposite of Out</li>
+									<li>[Sneak] - Makes the channels fade to the selected levels (EX: [1][At][5][0][Sneak]</li>
+								</ul>
+							</h1>
+						</article>
+					</div>
+					
+				</div>
+
 
 
 			<div class="parallax-group" style="height: 15%" id="footer">
 				<div class="parallax-base">
-					<!-- Nothing to see here -->
+					<footer>
+						<h1 class="txtinfo" style="margin: 2.5%">
+							© Chinmay Patil, Lillian Osborne Technical Theatre, 2018
+						</h1>
+					</footer>
 				</div>
 			</div>
 
@@ -212,7 +259,7 @@
 		    }
 		    // change background image to grill.jpg after 1 second
 		    setTimeout(function() {
-			    $("body").css("background-image", "url(../media/grill.jpg)")
+			    $("body").css("background-color", "darkslategray")
 			}, (1000));
 		});
 	</script>

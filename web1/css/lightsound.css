@@ -89,21 +89,30 @@ div#body {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.parallax-layer {
+
+.parallax-base {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-}
-.parallax-layer-base {
   transform: translateZ(0);
 }
-.parallax-layer-back {
+.parallax-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   transform: translateZ(-1px) scale(2);
 }
 
-.parallax-layer-fore {
+.parallax-fore {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     transform: translateZ(0.5px) scale(.5);
     z-index: 100
 
@@ -163,6 +172,7 @@ div#body {
     right: -2.5%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
 
 }
 
@@ -170,18 +180,20 @@ div#body {
     background-color: darkgrey;
 }
 
-#lightingtxtinfo {
+.txtinfo {
     border: white;
     background-color: rgba(255, 255, 255, 0.7);
     border-top-left-radius:  25px;
     border-top-right-radius: 25px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 15%;
     border-style: double;
     border-width: 7px;
     text-align: center;
     padding: 5px
 }
+
 
 #lightingtxtbutton {
     border: wheat;
@@ -238,5 +250,4 @@ div#body {
     margin: 0px;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    background-image: url(../media/grill.jpg);
 }
